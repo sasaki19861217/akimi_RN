@@ -1,1 +1,5 @@
-# akimi_RN
+# default-env
+
+yarn
+
+yarn watch
