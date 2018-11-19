@@ -12,7 +12,6 @@ module.exports = {
   },
 
   module: {
-
     rules: [
       {
         test: /\.js$/,
@@ -61,7 +60,8 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
+              sourceMap: true,
+              outputStyle: 'expanded'
             }
           }
         ]
