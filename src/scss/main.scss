@@ -1,6 +1,3 @@
-p{
-  font-size: 14px;
-  span{
-    color: red;
-  }
-}
+@import "base/main";
+@import "ftop/main";
+@import "mtop/main";

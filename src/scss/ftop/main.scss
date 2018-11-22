@@ -1,0 +1,42 @@
+.f-top body {
+  max-width: 100%;
+  margin: auto;
+  background-image: url(/image/f_top/bg.480.jpg);
+}
+
+.ft-section{
+
+  img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  &__1 a {
+    bottom: 0;
+  }
+
+  &__3 a,
+  &__4 a {
+    bottom: 5%;
+  }
+
+  &__5 a {
+    bottom: 8%;
+  }
+
+  &__6 a {
+    bottom: 3%;
+  }
+
+}
+
+[class^="ft-section__"] {
+  position: relative;
+  a {
+    position: absolute;
+    width: 80%;
+    display: block;
+    left: 10%;
+  }
+}

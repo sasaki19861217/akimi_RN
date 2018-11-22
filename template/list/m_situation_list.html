@@ -1,0 +1,103 @@
+<!--INC_F'template_head.txt'-->
+[%np = t%]
+[%cate.title%]
+
+[% IF c.menu_list.0 %]
+ [% FOREACH m=c.menu_list %]
+    <a href="/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->">
+      [%m.menu_name%]
+    </a>
+  [% END %]
+[% END %]
+  [% IF menu_list.0 %]
+    [% FOREACH m=menu_list %]
+      <a href="/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->">
+        <span class="menu-name">[%m.menu_name%]</span>
+      </a>
+    [% END %]
+  [% END %]
+
+<pre>
+
+   [% FOREACH m = c.menu_list %]
+    { 'c_url': '/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->',
+      'c_menu_name': 'c.[%m.menu_name%]',
+      'c_menu_id': '[%m.menu_id%]',
+      'c_category': '[%m.category%]',
+    },
+    [% END %]
+
+
+   [% FOREACH m = menu_list %]
+    { 'm_url': '/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->',
+      'm_menu_name': '[%m.menu_name%]',
+      'm_menu_id': '[%m.menu_id%]',
+      'm_category': '[%m.category%]',
+    },
+    [% END %]
+
+</pre>
+
+  <div id="js-menuList">
+    <h2>{{cateTitle}}</h2>
+    <ul>
+      <li v-for="( item, key ) in list">
+        <a :href="item.url">
+          <div>
+            <span>{{ item.menu_name }}</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+<!--INC_F'page_link.txt'-->
+
+      <a class="btn btn-block" href="/t.cgi?t=m/situation/category&<!--DEF_P-->">運命鑑定TOP</a>
+<script>
+$(function(){
+var list = [];
+
+[% IF c.menu_list.0 %]
+  [% FOREACH m = c.menu_list %]
+    list.push('[%m.menu_name%]');
+  [%END%]
+[%END%]
+[% IF m.menu_list.0 %]
+  [% FOREACH m = c.menu_list %]
+    list.push('[%m.menu_name%]');
+  [%END%]
+[%END%]
+
+console.log(list);
+
+  new Vue({
+    el: '#js-menuList',
+    data: {
+      np: '[% t %]',
+      cateTitle: '[%cate.title%]',
+      list: [
+      [% IF c.menu_list.0 %]
+       [% FOREACH m = c.menu_list %]
+        { 'url': '/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->',
+          'menu_name': '[%m.menu_name%]',
+          'menu_id': '[%m.menu_id%]',
+          'category': '[%m.category%]',
+        },
+        [% END %]
+      [% END %]
+      [% IF m.menu_list.0 %]
+       [% FOREACH m = menu_list %]
+        { 'url': '/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->',
+          'menu_name': '[%m.menu_name%]',
+          'menu_id': '[%m.menu_id%]',
+          'category': '[%m.category%]',
+        },
+        [% END %]
+      [% END %]
+      ],
+    }
+  });
+});
+</script>
+<!--INC_F'template_foot.txt'-->

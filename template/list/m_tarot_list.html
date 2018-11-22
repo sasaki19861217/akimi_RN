@@ -1,0 +1,40 @@
+<!--INC_F'template_head.txt'-->
+
+<div id="js-menuList">
+  <h2>{{cateTitle}}</h2>
+  <ul>
+    <li v-for="( item, key ) in list">
+      <a :href="item.url">
+        <div>
+          <span>{{ item.menu_name }}</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!--INC_F'page_link.txt'-->
+
+
+<script>
+$(function(){
+
+  new Vue({
+    el: '#js-menuList',
+    data: {
+      np: '[% t %]',
+      cateTitle: '[%cate.title%]',
+      list: [
+       [% FOREACH m = menu_list %]
+        { 'url': '/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->',
+          'menu_name': '[%m.menu_name%]',
+          'menu_id': '[%m.menu_id%]',
+          'category': '[%m.category%]',
+        },
+      [% END %]
+      ],
+    }
+  });
+});
+</script>
+<!--INC_F'template_foot.txt'-->

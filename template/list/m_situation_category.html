@@ -1,0 +1,60 @@
+<!--INC_F'template_head.txt'-->
+[%np = t%]
+ <section>
+    <div class="content-head">
+     <img class="" src="/i.cgi?n=cb/14" alt="">
+    </div>
+  </section>
+<section class="section-body index-section">
+[% IF cate_list.0 %]
+  <ul class="list-group recomme">
+ [% FOREACH c=cate_list%]
+    <li class="list-group-item">
+      <a href="/t.cgi?t=m/situation/list&genre=[%c.genre_id%]&category=[%c.category_id%]&<!--DEF_P-->">
+        <span class="menu-name">[%c.title%]</span>
+      </a>
+     </li>
+[%END%]
+     </ul>
+[% ELSE %]
+<div class="fs80">該当するカテゴリがありません</div>
+[% END %]
+</section>
+
+
+  <div id="js-menuList">
+    <ul>
+      <li v-for="( item, key ) in list" v-if="item">
+        <a :href="item.url">
+          <div>
+            <span>{{ item.title_name }}</span>
+          </div>
+        </a>
+      </li>
+      <div v-else>該当するカテゴリがありません</div>
+    </ul>
+  </div>
+
+
+<script>
+$(function(){
+
+  new Vue({
+    el: '#js-menuList',
+    data: {
+      np: '[% t %]',
+      list: [
+        [% FOREACH c=cate_list%]
+        { 'url': '/t.cgi?t=m/situation/list&genre=[%c.genre_id%]&category=[%c.category_id%]&<!--DEF_P-->',
+          'title_name': '[%c.title%]',
+          'menu_id': '[%c.menu_id%]',
+          'category': '[%c.category%]',
+          'genre': '[%c.genre_id%]',
+        },
+        [% END %]
+      ],
+    }
+  });
+});
+</script>
+<!--INC_F'template_foot.txt'-->

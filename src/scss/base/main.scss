@@ -1,0 +1,49 @@
+body{
+  background-color: #fff0ed;
+  margin: auto;
+}
+
+main{
+  max-width: 768px;
+  margin: auto;
+}
+
+
+
+.tip {
+  display: inline-block;
+  font-size: 10px;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 2px 6px;
+  margin-bottom: 4px;
+
+  &.day {
+    border-color: #fdb4b4;
+    color: #fdb4b4;
+  }
+
+  &.red {
+    background-color: #fdb4b4;
+    border-color: #fdb4b4;
+    color: #fff;
+  }
+
+  &.orange {
+    background-color: #fecdb2;
+    border-color: #fecdb2;
+    color: #fff;
+  }
+}//.tip
+
+.menu-name {
+  display: block;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@import "_link";
+@import "_list";

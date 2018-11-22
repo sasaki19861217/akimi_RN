@@ -1,0 +1,26 @@
+<!--INC_F'template_head.txt'-->
+[%np = t%]
+
+
+[%cate.title%]
+
+[% IF c.menu_list.0 %]
+   [% FOREACH m=c.menu_list %]
+      <a href="/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->">
+        [%m.menu_name%]
+      </a>
+    [% END %]
+  [% END %]
+  [% IF menu_list.0 %]
+    [% FOREACH m=menu_list %]
+      <a href="/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->">
+        <span class="menu-name">[%m.menu_name%]</span>
+      </a>
+    [% END %]
+  [% END %]
+<!--INC_F'page_link.txt'-->
+
+      <a class="btn btn-block" href="/t.cgi?t=m/situation/category&<!--DEF_P-->">運命鑑定TOP</a>
+
+</section>
+<!--INC_F'template_foot.txt'-->

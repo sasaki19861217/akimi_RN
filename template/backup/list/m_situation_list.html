@@ -1,0 +1,43 @@
+<!--INC_F'template_head.txt'-->
+[%np = t%]
+ <section>
+    <div class="content-head">
+     <img class="" src="/i.cgi?n=cb/14" alt="">
+    </div>
+  </section>
+<section class="section-body index-section">
+<div class="l">
+[%cate.title%]
+</div>
+[% IF c.menu_list.0 %]
+  <ul class="list-group recomme">
+   [% FOREACH m=c.menu_list %]
+    <li class="list-group-item">
+      <a href="/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->">
+        <span class="menu-name">[%m.menu_name%]</span>
+      </a>
+    </li>
+    [% END %]
+  </ul>
+  [% END %]
+[% IF menu_list.0 %]
+  <ul class="list-group recomme">
+    [% FOREACH m=menu_list %]
+    <li class="list-group-item">
+      <a href="/t.cgi?t=[%m.page%]&menu_id=[%m.menu_id%]&category=[%m.category%]&<!--DEF_P-->">
+        <span class="menu-name">[%m.menu_name%]</span>
+      </a>
+    </li>
+    [% END %]
+  </ul>
+  [% END %]
+<!--INC_F'page_link.txt'-->
+
+  <div class="btn-list clearfix">
+    <div class="col-xs-12">
+      <a class="btn btn-block" href="/t.cgi?t=m/situation/category&<!--DEF_P-->">運命鑑定TOP</a>
+    </div>
+  </div>
+
+</section>
+<!--INC_F'template_foot.txt'-->

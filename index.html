@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <div id="js-menuList">
+      <p><span>テスト</span></p>
+      <h2 v-html="cornerTitle(corner)"></h2>
+      <ul>
+        <li v-for="( item, key ) in list">
+          <a :href="item.page">
+            <div>
+              <span>{{ item.menu_name }}</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./bundle.js"></script>
+  <script>
+  var cornerId = 1;
+
+  new Vue({
+    el: '#js-menuList',
+    data: {
+      corner: cornerId,
+      list: [
+        { 'page': 't.cgi?t=m/basic/result&menu_id=0501&zspid=wzappallas',
+          'menu_name': '太陽星座で見るあなたの表の性格',
+        },
+        { 'page': 't.cgi?t=m/basic/result&menu_id=0502&zspid=wzappallas',
+          'menu_name': '太陽で見るあなたに適した生き方',
+        },
+        { 'page': 't.cgi?t=m/basic/result',
+          'menu_id': '&menu_id=0503&zspid=wzappallas',
+          'menu_name': '月星座で見る本当のあなたの性格',
+        },
+        { 'page': 't.cgi?t=m/basic/result&menu_id=0504&zspid=wzappallas',
+          'menu_name': '月で見るあなたが安らげる場所',
+        },
+        { 'page': 't.cgi?t=m/basic/result&menu_id=0505&zspid=wzappallas',
+          'menu_name': '水星星座で見るあなたの生まれ持った才能',
+        },
+        { 'page': 't.cgi?t=m/basic/result&menu_id=0506&zspid=wzappallas',
+          'menu_name': '水星で見るあなたの才能が生きる場所',
+        },
+        { 'page': 't.cgi?t=m/basic/result&menu_id=0507&zspid=wzappallas',
+          'menu_name': 'あなたが身近な人に与える印象',
+        },
+        { 'page': 't.cgi?t=m/basic/result&menu_id=0508&zspid=wzappallas',
+          'menu_name': '金星星座で見るあなたの生まれ持った魅力',
+        },
+        { 'page': 't.cgi?t=m/basic/result&menu_id=0509&zspid=wzappallas',
+          'menu_name': '金星で見るあなたの魅力が光る場所',
+        },
+        { 'page': 't.cgi?t=m/basic/result&menu_id=0510&zspid=wzappallas',
+          'menu_name': '火星星座で見るあなたの生まれ持った欲望と強み',
+        },
+      ],
+    },
+    methods: {
+      cornerTitle: function(corner){
+        if (corner == 2) {
+          return 'ふたりの相性';
+        } else if (corner == 3) {
+          return 'タロット占い';
+        } else {
+          return '基本性格';
+        }
+      }
+    }
+  });
+
+</script>
+</body>
+</html>
