@@ -1,14 +1,26 @@
 body{
   background-color: #fff0ed;
   margin: auto;
+  color: #7f6136;
 }
 
 main{
   max-width: 768px;
   margin: auto;
+  padding: 0 16px;
+}
+
+.mt-title__banner img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: auto;
 }
 
 
+.text-pink {
+  color: #ef6771;
+}
 
 .tip {
   display: inline-block;
@@ -45,5 +57,23 @@ main{
   display: block;
   clear: both;
 }
+
+.indention {
+  color: #7f6136;
+  text-align: center;
+  margin: 0px auto 20px;
+  font-size: 15px;
+
+  &.title{
+    margin-bottom: 10px;
+  }
+}
+
+.notes {
+  color: #7f6136;
+  font-size: 13px;
+}
+
 @import "_link";
-@import "_list";
+@import "list/main";
+@import "button/main";

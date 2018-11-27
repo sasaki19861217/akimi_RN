@@ -1,0 +1,45 @@
+.mt-section__4{
+  margin-top: 24px;
+}
+
+.mt-tokushu{
+  &__bg {
+    margin: auto;
+
+    a {
+      position: relative;
+      display: block;
+      text-align: center;
+
+      img {
+        width: 100%;
+        max-width: 425px;
+        margin: auto;
+      }
+
+    }//a
+
+  }//__bg
+
+
+  &__name {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left: 0;
+    color: #ef6771;
+    font-size: 18px;
+    @media screen and (max-width:374px){
+      font-size: 14px;
+    }
+    font-weight: bold;
+  }//__name
+
+
+  &__bg.present{
+    .mt-tokushu__name {
+      top: 20%;
+    }
+  }
+
+}//.mt-tokushu

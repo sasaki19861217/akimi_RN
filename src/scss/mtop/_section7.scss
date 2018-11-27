@@ -1,0 +1,33 @@
+.mt-section__7 {
+  margin-top: 24px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 16px;
+  background-color: #faf3ea;
+}
+
+.mt-tarot__listSmall li {
+  background-color: #fff;
+  margin: 12px auto;
+  width: 250px;
+  border-radius: 3px;
+  text-align: center;
+
+  a {
+    padding: 6px;
+    display: block;
+  }
+}
+
+.mt-tarot__listLarge li {
+  background-color: #fff;
+  margin: 12px auto;
+  max-width: 375px;
+  border-radius: 3px;
+  text-align: center;
+
+  a {
+    padding: 6px;
+    display: block;
+  }
+}

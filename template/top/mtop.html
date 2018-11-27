@@ -244,37 +244,37 @@
                   </ul>
                   <!--★日運★-->
                   <img class="w100" src="/i.cgi?n=line/5"></section>
-                  <!--★特集START★-->
-                  <div class="c lh0">
-                    <img class="w100" src="/i.cgi?n=cb/13">
-                  </div>
-                  <div class="list_02">
-                    <ul>
-                      <!-- ### KOSHINJIDOKA START ### -->
-                      <!-- 通常特集(過去) -->
-                      <CTAG mode="tokushu" type="regular" kind="backnumber" count="1" order="descending" days-until-expire="1" caption="true" template="CTAG/tokushu_history_sp.tmpl" id="regular_tokushu_past">
-                        <!-- 通常特集(現在) -->
-                        <CTAG mode="tokushu" type="regular" kind="present" count="1" order="ascending" days-until-expire="1" caption="true" template="CTAG/tokushu_present_sp.tmpl" id="regular_tokushu_present">
-                          <!-- シーズン特集(現在) -->
-                          <CTAG mode="tokushu" type="seasonal" kind="present" count="1" order="descending" days-until-expire="1" caption="true" template="CTAG/tokushu_present_sp.tmpl" id="seasonal_tokushu_present">
-                            <!-- イレギュラー特集(現在) -->
-                            <CTAG mode="tokushu" type="irregular" kind="present" count="1" order="descending" days-until-expire="1" caption="true" template="CTAG/tokushu_present_sp.tmpl" id="irregular_tokushu_present">
-                            </ul>
-                            <!-- ### KOSHINJIDOKA END ### -->
-                          </div>
-                          <!-- ### KOSHINJIDOKA START ### -->
-                          [%IF flag_is_koshin_jidoka_available%]
-                          <div class="button_right_02">
-                            <a href="/t.cgi?t=m/autotokushu/bn&<!--DEF_P-->">過去の特集</a>
-                          </div>
-                          <div class="both"></div>
-                          [%ELSE%]
-                          <!-- 更新自動化前 -->
-                          <div class="btn_readmore">
-                            <a href="/t.cgi?t=m/special/list&<!--DEF_P-->">過去の特集</a>
-                          </div>
-                          <div class="both"></div>
-                          [%END%]
+<!--★特集START★-->
+<div class="c lh0">
+<img class="w100" src="/i.cgi?n=cb/13">
+</div>
+<div class="list_02">
+<ul>
+<!-- ### KOSHINJIDOKA START ### -->
+<!-- 通常特集(過去) -->
+<CTAG mode="tokushu" type="regular" kind="backnumber" count="1" order="descending" days-until-expire="1" caption="true" template="CTAG/tokushu_history_sp.tmpl" id="regular_tokushu_past">
+<!-- 通常特集(現在) -->
+<CTAG mode="tokushu" type="regular" kind="present" count="1" order="ascending" days-until-expire="1" caption="true" template="CTAG/tokushu_present_sp.tmpl" id="regular_tokushu_present">
+<!-- シーズン特集(現在) -->
+<CTAG mode="tokushu" type="seasonal" kind="present" count="1" order="descending" days-until-expire="1" caption="true" template="CTAG/tokushu_present_sp.tmpl" id="seasonal_tokushu_present">
+<!-- イレギュラー特集(現在) -->
+<CTAG mode="tokushu" type="irregular" kind="present" count="1" order="descending" days-until-expire="1" caption="true" template="CTAG/tokushu_present_sp.tmpl" id="irregular_tokushu_present">
+</ul>
+<!-- ### KOSHINJIDOKA END ### -->
+</div>
+<!-- ### KOSHINJIDOKA START ### -->
+[%IF flag_is_koshin_jidoka_available%]
+<div class="button_right_02">
+<a href="/t.cgi?t=m/autotokushu/bn&<!--DEF_P-->">過去の特集</a>
+</div>
+<div class="both"></div>
+[%ELSE%]
+<!-- 更新自動化前 -->
+<div class="btn_readmore">
+<a href="/t.cgi?t=m/special/list&<!--DEF_P-->">過去の特集</a>
+</div>
+<div class="both"></div>
+[%END%]
                           <!--★ｼﾁｭｴｰｼｮﾝSTART★-->
                           <div class="c lh0">
                             <img class="w100" src="/i.cgi?n=cb/14">
