@@ -111,6 +111,9 @@ li{
 
   .tokushuBg {
     width: 100%;
+    max-width: 425px;
+    display: block;
+    margin: auto;
   }
 
   .menu-name::before {

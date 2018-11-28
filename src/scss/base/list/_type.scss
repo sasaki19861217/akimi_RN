@@ -75,10 +75,17 @@
 
 
   &.type-7{
-    .rankSpace, .li-category__link, .thumbSpace,
+    .rankSpace, .thumbSpace,
     .tipSpace, .tokushuBg, .captionSpace {
       display: none;
    }
+
+    .li-category__link{
+      bottom: 45%;
+      @media screen and (max-width:424px){
+        bottom: 55%;
+      }
+    }
 
     .summarySpace {
       display: block;
@@ -94,6 +101,9 @@
      }
 
     ul{
+      display: flex;
+      flex-wrap: wrap;
+
       &::after {
         content: "";
         display: block;
@@ -101,8 +111,7 @@
       }
 
       li {
-        width: 49.8%;
-        float: left;
+        width: 50%;
         border-bottom: 0;
         border-top: 1px solid #898989;
         border-right: 1px solid #898989;
@@ -131,17 +140,21 @@
       li{
         a{
           position: relative;
+          pointer-events:none;
         }
       }//li
     }//ul
 
     .menu-name {
       position: absolute;
-      width: 100%;
+      width: 85%;
       text-align: center;
-      bottom: 30%;
-      left: 0%;
-      font-size: 18px;
+      bottom: 35%;
+      @media screen and (max-width:374px){
+        bottom: 30%;
+      }
+      left: 7%;
+      font-size: 14px;
       font-weight: bold;
       color: #ef6771;
     }//.menu-name

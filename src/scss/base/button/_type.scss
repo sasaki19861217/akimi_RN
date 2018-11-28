@@ -28,6 +28,9 @@
     }
   }//.small
 
+  &.large {
+    width: 280px;
+  }//.large
 
   &.two-stage {
     margin: 0 auto 20px;
@@ -60,5 +63,17 @@
     }
   } //.primary
 
+  &.brown {
+    width: max-content;
+    margin-bottom: 36px;
+
+    a {
+      box-shadow: 0.5px 0.9px 2px 0 rgba(0, 0, 0, 0.35);
+      padding: 10px 14px;
+      border-radius: 5px;
+      color: #7f6136;
+      background-color: #f5e1cd;
+    }
+  }//.brown
 
 }//.btn-base

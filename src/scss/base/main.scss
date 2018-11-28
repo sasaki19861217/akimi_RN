@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
   background-color: #fff0ed;
   margin: auto;
@@ -10,11 +14,14 @@ main{
   padding: 0 16px;
 }
 
-.mt-title__banner img {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: auto;
+.mt-title__banner{
+  margin: 24px auto;
+  img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+  }
 }
 
 

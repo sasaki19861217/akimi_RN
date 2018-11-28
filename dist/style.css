@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #fff0ed;
   margin: auto;
@@ -8,6 +13,10 @@ main {
   max-width: 768px;
   margin: auto;
   padding: 0 16px;
+}
+
+.mt-title__banner {
+  margin: 24px auto;
 }
 
 .mt-title__banner img {
@@ -228,6 +237,9 @@ li {
 
 .mt-menu__list .tokushuBg {
   width: 100%;
+  max-width: 425px;
+  display: block;
+  margin: auto;
 }
 
 .mt-menu__list .menu-name::before {
@@ -297,9 +309,19 @@ li {
   display: none;
 }
 
-.mt-menu-Base.type-7 .rankSpace, .mt-menu-Base.type-7 .li-category__link, .mt-menu-Base.type-7 .thumbSpace,
+.mt-menu-Base.type-7 .rankSpace, .mt-menu-Base.type-7 .thumbSpace,
 .mt-menu-Base.type-7 .tipSpace, .mt-menu-Base.type-7 .tokushuBg, .mt-menu-Base.type-7 .captionSpace {
   display: none;
+}
+
+.mt-menu-Base.type-7 .li-category__link {
+  bottom: 45%;
+}
+
+@media screen and (max-width: 424px) {
+  .mt-menu-Base.type-7 .li-category__link {
+    bottom: 55%;
+  }
 }
 
 .mt-menu-Base.type-7 .summarySpace {
@@ -313,6 +335,16 @@ li {
   display: none;
 }
 
+.mt-menu-Base.type-8 ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
 .mt-menu-Base.type-8 ul::after {
   content: "";
   display: block;
@@ -320,8 +352,7 @@ li {
 }
 
 .mt-menu-Base.type-8 ul li {
-  width: 49.8%;
-  float: left;
+  width: 50%;
   border-bottom: 0;
   border-top: 1px solid #898989;
   border-right: 1px solid #898989;
@@ -343,17 +374,24 @@ li {
 
 .mt-menu-Base.type-9 ul li a {
   position: relative;
+  pointer-events: none;
 }
 
 .mt-menu-Base.type-9 .menu-name {
   position: absolute;
-  width: 100%;
+  width: 85%;
   text-align: center;
-  bottom: 30%;
-  left: 0%;
-  font-size: 18px;
+  bottom: 35%;
+  left: 7%;
+  font-size: 14px;
   font-weight: bold;
   color: #ef6771;
+}
+
+@media screen and (max-width: 374px) {
+  .mt-menu-Base.type-9 .menu-name {
+    bottom: 30%;
+  }
 }
 
 .mt-menu-Base.type-10 .rankSpace, .mt-menu-Base.type-10 .summarySpace, .mt-menu-Base.type-10 .li-category__link,
@@ -413,6 +451,10 @@ li {
   display: inline-block;
 }
 
+.btn-base.large {
+  width: 280px;
+}
+
 .btn-base.two-stage {
   margin: 0 auto 20px;
 }
@@ -458,6 +500,22 @@ li {
   border-radius: 6px;
   -webkit-box-shadow: 1px 2px 1px 0 #7b7a7a;
           box-shadow: 1px 2px 1px 0 #7b7a7a;
+}
+
+.btn-base.brown {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 36px;
+}
+
+.btn-base.brown a {
+  -webkit-box-shadow: 0.5px 0.9px 2px 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0.5px 0.9px 2px 0 rgba(0, 0, 0, 0.35);
+  padding: 10px 14px;
+  border-radius: 5px;
+  color: #7f6136;
+  background-color: #f5e1cd;
 }
 
 .f-top body {
@@ -821,6 +879,10 @@ ul.mt-gnav__list li a {
   padding: 12px;
 }
 
+.mt-section__6 {
+  margin-bottom: 24px;
+}
+
 .mt-section__7 {
   margin-top: 24px;
   margin-left: -16px;
@@ -853,5 +915,82 @@ ul.mt-gnav__list li a {
 .mt-tarot__listLarge li a {
   padding: 6px;
   display: block;
+}
+
+.mt-section__8 {
+  margin-bottom: 48px;
+}
+
+.mt-graph {
+  max-width: 340px;
+  margin: auto auto 24px;
+  text-align: center;
+}
+
+.mt-graph img {
+  width: 80%;
+}
+
+.mt-graph .marry_section {
+  margin: 41px auto;
+}
+
+.mt-graph .marry_section .indention {
+  margin: 24px auto;
+}
+
+.mt-section__10 {
+  margin-bottom: 48px;
+}
+
+.mt-section__10 .appraisal_section {
+  background-image: url("/image/m_top/base.sp.480.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 7%;
+  padding-bottom: 13%;
+  background-position: center;
+}
+
+.mt-section__10 .appraisal_section ul {
+  text-align: center;
+}
+
+.mt-section__10 .appraisal_section ul li {
+  padding: 12px;
+  max-width: 75%;
+  margin: auto;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 374px) {
+  .mt-section__10 .appraisal_section ul li {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+.mt-section__10 .appraisal_section ul li a {
+  display: block;
+}
+
+.mt-section__10 .appraisal_section ul li .chapter {
+  color: #ff838c;
+}
+
+.mt-section__11 {
+  margin-bottom: 48px;
+}
+
+.mt-section__12 {
+  margin-bottom: 48px;
+}
+
+.mt-section__12 .guidance_section {
+  text-align: center;
+}
+
+.mt-section__12 .comingSoon_section {
+  margin-top: 24px;
 }
 
