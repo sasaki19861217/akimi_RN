@@ -1,16 +1,20 @@
-.mt-graph {
-  max-width: 340px;
-  margin: auto auto 24px;
-  text-align: center;
+.mt-section__9{
+  margin-bottom: 52px;
 
-  img {
-    width: 80%;
-  }
+  .mt-graph {
+    max-width: 340px;
+    margin: auto auto 24px;
+    text-align: center;
 
-  .marry_section {
-    margin: 41px auto;
-    .indention {
-      margin: 24px auto;
+    img {
+      width: 80%;
+    }
+
+    .marry_section {
+      margin: 41px auto;
+      .indention {
+        margin: 24px auto;
+      }
     }
   }
 }

@@ -4,6 +4,37 @@
   margin-right: -16px;
   padding: 16px;
   background-color: #faf3ea;
+
+
+  .caption_section {
+    background-image: url(/image/tarot/thumb.480.gif);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 15% 0;
+    @media screen and (max-width:374px){
+      background-position: 2% 0;
+    }
+    @media screen and (min-width:424px){
+      background-position: 20% 0;
+    }
+    @media screen and (min-width:480px){
+      background-position: 30% 0;
+    }
+    padding-bottom: 50px;
+    max-width: 480px;
+    margin: auto;
+    .indention {
+      position: relative;
+      left: 20%;
+      top: 20px;
+      width: 55%;
+    }
+
+  }
+}
+
+ul {
+  margin-bottom: 18px;
 }
 
 .mt-tarot__listSmall li {

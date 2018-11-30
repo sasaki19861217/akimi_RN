@@ -1,11 +1,18 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  display: block;
 }
 
 body{
   background-color: #fff0ed;
   margin: auto;
   color: #7f6136;
+  line-height: 1.6em;
 }
 
 main{
@@ -14,8 +21,24 @@ main{
   padding: 0 16px;
 }
 
+.cocoloni-banner {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  background-color: #89CD00;
+  background-image: url(/image/common/cocoloni-brand.sp.480.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 64px 10px;
+  background-size: 64px 10px;
+  height: 24px;
+}
+
 .mt-title__banner{
-  margin: 24px auto;
+  margin: 0px auto 12px;
+
   img {
     width: 100%;
     max-width: 600px;
@@ -31,11 +54,12 @@ main{
 
 .tip {
   display: inline-block;
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 12px;
   border: 1px solid;
   border-radius: 3px;
-  padding: 2px 6px;
-  margin-bottom: 4px;
+  padding: 4px 6px;
+  margin-bottom: 7px;
 
   &.day {
     border-color: #fdb4b4;
@@ -68,7 +92,7 @@ main{
 .indention {
   color: #7f6136;
   text-align: center;
-  margin: 0px auto 20px;
+  margin: 0px auto 18px;
   font-size: 15px;
 
   &.title{

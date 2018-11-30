@@ -1,13 +1,16 @@
 .mt-section__3 {
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .mt-daily__area {
   background-color: #fff;
   padding: 12px;
+  padding-bottom: 0;
   border-radius: 10px;
 
   .switch-day-new{
+    margin-top: 0;
+
     button#tech-yesterday-btn {
       background: transparent;
       box-shadow: none;
@@ -80,6 +83,11 @@
     margin: 0!important;
     border: 0!important;
     background-color: #faf1ec;
+    padding: 12px!important;
+    padding-bottom: 32px!important;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
     &-content {
       box-shadow: none;
@@ -118,6 +126,7 @@
         flex-grow: 2;
         text-align: justify;
         margin-left: 24px;
+        margin-top: 14px;
       }
 
       p.text-baloon {
@@ -129,21 +138,21 @@
         &::before{
           content: "";
           position: absolute;
-          top: 50%;
-          left: -25px;
+          top: 55%;
+          left: -26px;
           margin-top: -15px;
-          border: 12px solid transparent;
-          border-right: 12px solid #c3c0c0;
+          border: 9px solid transparent;
+          border-right: 16px solid #c3c0c0;
         }
 
         &::after{
           content: "";
           position: absolute;
-          top: 50%;
+          top: 55%;
           left: -24px;
           margin-top: -15px;
-          border: 12px solid transparent;
-          border-right: 12px solid #fff;
+          border: 9px solid transparent;
+          border-right: 16px solid #fff;
         }
       }
 
@@ -176,12 +185,16 @@
         content:"";
         position: absolute;
         background-image: url("/image/m_top/next.sp.480.png");
-        bottom: 15px;
+        top: 30%;
         right: 12px;
         padding: 7px;
         background-repeat: no-repeat;
         background-size: contain;
       }//::after
     }//a
+
+    span.menu-name{
+      line-height: 1em;
+    }
   }//li
 }//.mt-daily__list

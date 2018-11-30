@@ -1,0 +1,97 @@
+.se-header__top {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.logo {
+  width: 50%;
+  margin-left: 25%;
+  display: block;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 175px;
+    margin: auto;
+  }
+}
+
+.menu-btn__link span,
+.menu-btn__link::before,
+.menu-btn__link::after {
+  background: #f96161;
+}
+
+.menu-btn__link {
+  margin: 15px 20px 0 5px;
+}
+
+.se-site__header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+h1.sitetitle {
+  margin: 0;
+}
+
+.menu-btn {
+  width: 25%;
+  text-align: -webkit-center;
+}
+
+.menu-btn_text {
+  font-size: 10px;
+  margin: 2px 5px 2px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.menu-btn__link
+{
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  z-index: 2;
+  margin: 20px auto 0;
+}
+
+.menu-btn__link span,
+.menu-btn__link::before,
+.menu-btn__link::after{
+  background: #ef6771;
+  content: '';
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-radius:2px;
+  position: absolute;
+  right:0;
+}
+
+.menu-btn__link::before{
+  top:3px;
+}
+
+.menu-btn__link::after{
+  bottom:2px;
+}
+
+.menu-btn__link span{
+  top: 50%;
+  margin-top: -1.5px;
+}
+
+/*menu-btn animation */
+.menu-btn__link span,
+.menu-btn__link::before,
+.menu-btn__link::after{
+  transition: none 0.5s ease 0.5s;
+  transition-property: transform, top, bottom, right, opacity;
+  -webkit-transition: none 0.5s ease 0.5s;
+  -webkit-transition-property: transform, top, bottom, right, opacity;
+}

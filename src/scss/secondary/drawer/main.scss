@@ -1,0 +1,19 @@
+nav#menu {
+    background-color: #fa9595;
+    color: #ffffff;
+}
+
+html.mm-opening .menu-btn__link span {
+  right: -50px;
+  opacity: 0;
+}
+
+html.mm-opening .menu-btn__link:before {
+  -webkit-transform: rotate(45deg);
+  top: 12px;
+}
+
+html.mm-opening .menu-btn__link:after {
+  -webkit-transform: rotate(-45deg);
+  bottom: 9px;
+}

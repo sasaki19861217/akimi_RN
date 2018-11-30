@@ -1,5 +1,5 @@
 .mt-section__4{
-  margin-top: 24px;
+  margin-top: 14px;
 }
 
 .mt-tokushu{
@@ -19,16 +19,21 @@
 
     }//a
 
+    &.present {
+      margin-bottom: 12px;
+    }//.present
+
   }//__bg
 
 
   &__name {
     position: absolute;
     width: 100%;
-    top: 35%;
+    top: 40%;
     left: 0;
     color: #ef6771;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 16px;
     @media screen and (max-width:374px){
       font-size: 14px;
     }
@@ -38,7 +43,7 @@
 
   &__bg.present{
     .mt-tokushu__name {
-      top: 20%;
+      top: 25%;
     }
   }
 
