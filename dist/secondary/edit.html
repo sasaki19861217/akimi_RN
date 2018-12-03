@@ -1,0 +1,29 @@
+<!--INC_F'template_head.txt'-->
+[%np = t%]
+
+<section class="section-body index-section">
+  <div class="ed-template__title">登録情報編集</div>  
+  
+  <div class="ed-template__list">
+    <a class="ed-template__listItem" href="/t.cgi?t=m/edit/myprofile&<!--DEF_P-->">自分のプロフィール変更</a>
+    <a class="ed-template__listItem" href="/t.cgi?t=m/edit/friend&<!--DEF_P-->">友達情報追加・変更</a>
+
+    <DTAG payment="creditcard">
+    <a class="ed-template__listItem" href="<DTAG+ mode="site" env="cocoloni|pga">http://websmart.zappallas.com<D_ELSE>http://websmart.ajapa.jp</DTAG>/web_u_pay/authentication/change?serviceCode=0635_1001&domain=<DTAG+ mode="site" env="cocoloni|pga">[%common_site_info.domain%].pga.jp<D_ELSE>[%common_site_info.domain%].ajapa.jp</DTAG>&newAuth=1">決済・ログイン情報変更</a>
+    <a class="ed-template__listItem" href="<DTAG+ mode="site" env="cocoloni|pga">http://websmart.zappallas.com<D_ELSE>http://websmart.ajapa.jp</DTAG>/web_u_pay/authentication/reissue?serviceCode=0635_1001&domain=<DTAG+ mode="site" env="cocoloni|pga">[%common_site_info.domain%].pga.jp<D_ELSE>[%common_site_info.domain%].ajapa.jp</DTAG>&newAuth=1">パスワード再発行・変更</a>
+    </DTAG>  
+
+    <DTAG payment="creditcard">
+    [% ELSE %]      
+    <a class="ed-template__listItem" href="http://help.cocoloni.jp/t.cgi?t=c/info/credit/top&<!--DEF_P-->&domain=[%common_site_info.domain%]">
+    クレジットカードでのご利用方法
+    </a>
+    </DTAG>
+
+    <a class="ed-template__listItem" href="http://www.zappallas.com/sp/etc/index.html?WEBSMARTOUT=1">個人情報の取り扱いについて</a>
+    <a class="ed-template__listItem" href="/mypage.cgi?site_id=<CTAG mode="property" type="siteinfo" param="siteid">&member=m&<!--DEF_P-->">お預かりサービス</a>
+  </div>
+
+</section>  
+<!--INC_F'template_foot.txt'-->    
+    
