@@ -1,0 +1,44 @@
+<!--INC_F'template_head.txt'-->
+<section class="section-body index-section">
+  <div class="un-template__title">会員削除</div>
+  <div class="un-template__caption">会員登録を削除すると履歴や登録情報がすべて削除されます。退会しますか？</div>
+  <div class="un-template__list">
+    <a class="un-template__listItem" href="/t.cgi?t=m/top&<!--DEF_P-->">退会しない</a>
+    <a class="un-template__listItem" href="/t.cgi?t=m/help/unreg2&<!--DEF_P-->">退会する</a>
+    <DTAG payment="creditcard">
+      [% ELSE %]      
+      <a class="un-template__listItem" href="http://help.cocoloni.jp/t.cgi?t=c/info/credit/top&<!--DEF_P-->&domain=[%common_site_info.domain%]">
+      クレジットカードでのご利用方法
+      </a>
+    </DTAG>
+  </div>
+
+  [% IF zspid.substr(0, 1) == 'w' %]  
+  <div class="un-template__caption">「特別鑑定」は会員登録中のみご購入いただけます。</div>
+  <div class="un-template__listTitle">おすすめの特別鑑定</div>   
+  <div class="un-corner01">
+    <CTAG mode="kobetsu" type="random" count="2" pattern="2" except-buy-package="1" template="CTAG/kobetsu_random.sp.xml.tmpl">
+    <!--INC_F'kobetsu/year.sp.txt'-->
+  </div>
+  <div class="btn-list clearfix">
+    <a class="un-template__listItem" href="/t.cgi?t=m/kobetsu/list&<!--DEF_P-->">特別鑑定一覧</a>
+  </div>
+  [%END-%]
+
+  <!--INC_F'mark_link_unreg1.txt'-->
+  <div class="un-template__caption">会員登録を削除すると履歴や登録情報がすべて削除されます。削除しますか？</div>
+
+  <div class="btn-list clearfix">
+    <a class="un-template__listItem" href="/t.cgi?t=m/top&<!--DEF_P-->">会員登録を残す</a>
+    <a class="un-template__listItem" href="/t.cgi?t=m/help/unreg2&<!--DEF_P-->">やっぱり退会</a>
+
+    <DTAG payment="creditcard">
+      [% ELSE %]
+      <a class="un-template__listItem" href="http://help.cocoloni.jp/t.cgi?t=c/info/credit/top&<!--DEF_P-->&domain=[%common_site_info.domain%]">
+      クレジットカードでのご利用方法
+      </a>
+    </DTAG>
+  </div>
+</section>  
+<!--INC_F'template_foot.txt'-->    
+    
