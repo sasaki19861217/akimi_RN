@@ -1,0 +1,53 @@
+.footer {
+  margin-top: 20px;
+  .m-top &{
+    margin-top: 0;
+  }
+
+  .inc {
+    font-size: 10px;
+    text-align: center;
+    background-color: #fff;
+
+    .m-top &{
+      background-color: #fff0ed;
+    }
+  }
+}
+
+
+.foot-controler{
+
+  &.row {
+    display: flex;
+    background-color: #fff;
+
+    div {
+      flex: 1;
+      text-align: center;
+
+      a {
+        display: block;
+        padding-top:47px;
+        cursor: pointer;
+      }
+    }
+  }//.row
+}//.foot-controler
+
+.foot-controler.row div{
+
+  &:first-child a {
+    background-image: url("/image/secandary/home.sp.480.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 34px;
+  }
+
+  &:last-child a {
+    background-image: url("/image/secandary/page_top.sp.480.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55px;
+  }
+}//.foot-controler.row div
