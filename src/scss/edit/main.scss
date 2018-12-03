@@ -1,0 +1,22 @@
+.ed-template__title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #a00606;
+}
+.ed-template__list {
+  display: flex;
+  flex-direction: column;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    background-color: #f96161;
+    color: #fff;
+    width: 80%;
+    margin: 8px auto;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,29 @@
+.li-pageTemplate__subList {
+  a {
+    display: flex;
+    pointer-events: none;
+    div {
+      width: 60px;
+      font-size: 13px;
+      &.li-pageTemplate__subListCaption {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .active {
+    a {
+      color: #ef6771;
+    }
+
+   .li-pageTemplate__subListStatus {
+      color: #7f6136;
+   }
+  }
+}
