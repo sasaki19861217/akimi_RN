@@ -5,6 +5,29 @@
     margin-top: 24px;
     img {width: 100%;}
   }  
+  &__menuTitle {
+    color: #7f6136;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 24px auto 12px;
+  }
+  &__subTitle {
+    position: absolute;
+    top: 12px;
+    left: 50px;
+    font-size: 13px;
+    color: #7f6136;
+    text-align: left;
+  }
+  &__menuCaption {
+    color: #7f6136;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 100;
+    margin: 12px auto;
+  }
 
   a {
     display: flex;
@@ -50,6 +73,7 @@
     font-size: 10px;
     padding: 0 4px;
     margin-right: 4px;
+    border-radius: 6px;
 
     &:last-child {
       margin-right: 0;
@@ -70,6 +94,145 @@
   display: none;
 }
 
-.type2 .li-pageTemplate a {
-  padding: 15px 16px 0 12px;
+.type2 {
+  &.li-pageTemplate__menuTitle {
+    color: #ec6868;
+    font-size: 16px;
+  }
+  .li-pageTemplate a {
+    padding: 15px 16px 0 12px;
+  }
 }
+
+.type3 {
+  &.li-pageTemplate__menuTitle {
+    color: #fff;
+    background-color: #ef6771;
+    margin: 24px -16px 0;
+    text-align: left;
+    padding-left: 16px;
+    font-size: 13px;
+  }
+  .li-pageTemplate {
+    &__turning {
+      display: block;
+      font-size: 13px;
+      color: #7f6136;
+      background-image: url("/image/secandary/icon_sakura.sp.480.png");
+      background-size: 24px 24px;
+      background-repeat: no-repeat;
+      padding-left: 28px;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+    a {
+      min-height: 75px;
+      padding-top: 38px;
+    }
+
+
+    &__tips {
+      top: 12px;
+      left: 138px;
+      li {
+        display: none;
+      
+        &:first-child {
+          display: flex;
+          font-size: 12px;
+          width: 100px;
+          justify-content: center;
+          align-items: center;
+          background-color: #fff;
+          line-height: 1.2;
+          height: 25px;
+          border: 1px solid #fdb4b4;
+        }
+      }
+    }
+  }
+}
+
+
+.type4 {
+  .li-pageTemplate a {
+    min-height: 75px;
+    padding-top: 38px;
+  }
+
+  .li-pageTemplate__tips {
+    left: 12px;
+    top: 12px;
+    li {
+      display: none;
+      &:first-child {
+        display: flex;
+        background-color: #fdb4b4;
+        color: #fff;
+        width: 35px;
+        justify-content: center;
+        font-size: 12px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+.type5 {
+  .li-pageTemplate a {
+    min-height: 75px;
+    padding-top: 38px;
+  }
+  .li-pageTemplate__tips {
+    top: 12px;
+    li {
+      display: none;
+      &:first-child {
+        display: flex;
+        font-size: 12px;
+        width: 120px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        line-height: 1.2;
+        height: 25px;
+        border: 1px solid #fdb4b4;
+      }
+    }
+    a {
+      min-height: 75px;
+      padding-top: 38px;
+    }
+  }
+  .li-pageTemplate__title {
+    line-height: 1.3;
+    font-size: 13px;
+    > span {
+      color: #7f6136;
+    }
+  }
+}
+
+.type6 {
+  .li-pageTemplate a {
+    min-height: 61px;
+    padding-top: 4px;
+    line-height: 1.6;
+  }
+  .li-pageTemplate__tips {
+    display: none;
+  }
+  .li-pageTemplate__title br {
+    display: none;
+  }
+  .li-pageTemplate__subTitle {
+    font-size: 13px;
+    color: #7f6136;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}
+
+@import "subList";
