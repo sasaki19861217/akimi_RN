@@ -15,7 +15,21 @@
       background-color: #fecdb2;
     }
   }
-
+  input  {
+    background-color: #ef6771;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 35px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 1px 0 #7b7a7a;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+ß
   &.small{
     width: auto;
 
