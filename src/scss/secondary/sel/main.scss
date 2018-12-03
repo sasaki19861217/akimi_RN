@@ -1,0 +1,12 @@
+.se-pageTemplate {
+  padding: 12px 0;
+  &__titleImg {
+    width: 100%;
+    margin-top: 24px;
+    img {width: 100%;}
+  }
+  h2 {
+    font-size: 14px;
+  }
+}
+
