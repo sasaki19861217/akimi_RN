@@ -1,0 +1,17 @@
+.re-result__img.marry img {
+    width: 100%;
+    max-width: 320px;
+}
+
+
+p.re-result__text .year {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+.re-result__titleSection :not(.aisho):not(br),
+.re-result__afterSection :not(.aisho):not(br){
+  display:none;
+}

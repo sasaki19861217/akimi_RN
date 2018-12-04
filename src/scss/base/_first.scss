@@ -1,0 +1,17 @@
+.fi-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #a00606;
+}
+.fi-text {
+  font-size: 13px;
+  color: #867029;
+  padding: 0 10px;
+  span {
+    color: #f96161;
+    font-weight: bold;
+    display: inline-block;
+  }
+}

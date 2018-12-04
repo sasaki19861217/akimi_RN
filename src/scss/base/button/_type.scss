@@ -29,7 +29,7 @@
     font-size: 16px;
     font-weight: 700;
 }
-ß
+
   &.small{
     width: auto;
 
@@ -94,3 +94,23 @@
   }//.brown
 
 }//.btn-base
+
+
+
+.btn-base.primary.type2 {
+  width: 240px;
+  position: relative;
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+  }
+}

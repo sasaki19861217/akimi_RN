@@ -112,7 +112,14 @@ main{
   color: #7f6136;
   font-size: 13px;
 }
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
 
 @import "_link";
+@import "_first";
 @import "list/main";
 @import "button/main";
