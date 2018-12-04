@@ -8,10 +8,22 @@
   &__mainImg {
     width: 80%;
     margin: auto;
+    &.w80px {
+      width: 80px;
+    }
     img { width: 100%; }
   }
   h2 {
     font-size: 14px;
+  }
+  label {
+    display: block;
+    padding: 6px 0;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  input[type="radio"] {
+    appearance: radio;
   }
 }
 
