@@ -1,5 +1,5 @@
 .li-pageTemplate {
-  margin: 0 -16px;
+  margin: 0 -16px 24px;
   &__titleImg {
     width: 100%;
     margin-top: 24px;
@@ -65,14 +65,15 @@
   justify-content: flex-start;
   font-size: 10px;
   position: absolute;
-  top: 0;
-  left: 8px;
+  top: 12px;
+  left: 12px;
 
   li {
-    background-color: #ccc;
+    background-color: #fff;
     font-size: 10px;
     padding: 0 4px;
     margin-right: 4px;
+    border: 1px solid;
     border-radius: 6px;
 
     &:last-child {
@@ -100,7 +101,8 @@
     font-size: 16px;
   }
   .li-pageTemplate a {
-    padding: 15px 16px 0 12px;
+    padding: 36px 16px 0 12px;
+    min-height: 74px;
   }
 }
 
@@ -123,8 +125,6 @@
       background-repeat: no-repeat;
       padding-left: 28px;
       position: absolute;
-      top: 12px;
-      left: 12px;
     }
     a {
       min-height: 75px;
@@ -133,7 +133,6 @@
 
 
     &__tips {
-      top: 12px;
       left: 138px;
       li {
         display: none;
@@ -162,8 +161,6 @@
   }
 
   .li-pageTemplate__tips {
-    left: 12px;
-    top: 12px;
     li {
       display: none;
       &:first-child {
@@ -177,6 +174,11 @@
       }
     }
   }
+
+  &.li-pageTemplate__menuTitle span {
+    display: block;
+    color: #ec6868;
+  }
 }
 
 .type5 {
@@ -185,7 +187,6 @@
     padding-top: 38px;
   }
   .li-pageTemplate__tips {
-    top: 12px;
     li {
       display: none;
       &:first-child {
@@ -234,5 +235,71 @@
     left: auto;
   }
 }
+
+.type7 {
+  .li-pageTemplate__tips {
+    margin: auto;
+    bottom: 12px;
+    height: 24px;
+    li {
+      display: none;
+      color: #fdb4b4;
+      &:first-child {
+        display: flex;
+        border: 1px solid #fdb4b4;
+        background-color: #fff;
+        width: 24px;
+        justify-content: center;
+      }
+    }
+  }
+
+  .li-pageTemplate__title {
+    padding-left: 32px;
+  }
+
+  .li-pageTemplate a {
+    color: #7f6136;
+    pointer-events: none;
+    &::before,
+    &::after {
+      display: none;
+    }
+    &.active {
+      color: #ec6868;
+      pointer-events: auto;
+      &::before,
+      &::after {
+        display: block;
+      }
+    }
+  }
+}
+
+.type8 {
+  .li-pageTemplate a {
+    padding-top: 40px;
+    min-height: 80px;
+  }
+
+  .li-pageTemplate__tips {
+    li {
+      display: none;
+      border: 1px solid;
+      background-color: #fff;
+      width: 140px;
+      font-size: 12px;
+      justify-content: center;
+      &:first-child {
+        display: flex;
+      }
+    }
+  }
+
+  .li-pageTemplate__subTitle {
+    left: 160px;
+  }
+}
+
 
 @import "subList";
