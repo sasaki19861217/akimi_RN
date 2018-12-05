@@ -86,6 +86,10 @@ h6.edit-item {
   label {
     width: 100%;
     display: block;
+    span {
+      font-size: 14px;
+      padding-left: 12px;
+    }
   }
   & + br {
     display: none;
