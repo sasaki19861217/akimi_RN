@@ -14,6 +14,7 @@ input, button, textarea, select {
 }
 img{
   display: block;
+  width: 100%;
 }
 
 body{
@@ -42,6 +43,11 @@ main{
   -webkit-background-size: 64px 10px;
   background-size: 64px 10px;
   height: 24px;
+}
+
+.section-body {
+  width: 90%;
+  margin: auto;
 }
 
 .mt-title__banner{

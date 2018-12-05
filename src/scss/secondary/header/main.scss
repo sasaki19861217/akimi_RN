@@ -1,3 +1,8 @@
+.se-header__section{
+  max-width: 768px;
+  margin: auto;
+}
+
 .se-header__top {
   overflow: hidden;
   position: relative;
@@ -14,8 +19,9 @@
 
   img {
     width: 100%;
-    max-width: 175px;
+    max-width: 160px;
     margin: auto;
+    padding: 3px 6px;
   }
 }
 
@@ -25,13 +31,13 @@
   background: #f96161;
 }
 
-.menu-btn__link {
-  margin: 15px 20px 0 5px;
-}
-
 .se-site__header {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  background-image: url(/image/secandary/title_bg.sp.480.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-repeat-x: repeat;
 }
 
 h1.sitetitle {
@@ -57,7 +63,7 @@ h1.sitetitle {
   height: 24px;
   position: relative;
   z-index: 2;
-  margin: 20px auto 0;
+  margin: 15px auto 0;
 }
 
 .menu-btn__link span,
@@ -95,3 +101,5 @@ h1.sitetitle {
   -webkit-transition: none 0.5s ease 0.5s;
   -webkit-transition-property: transform, top, bottom, right, opacity;
 }
+
+@import "_320";
