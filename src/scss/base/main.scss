@@ -119,6 +119,12 @@ hr {
   border-top: 1px solid #eeeeee;
 }
 
+.section-body {
+  width: 90%;
+  margin: 4px auto 0;
+}
+
+
 @import "_link";
 @import "_first";
 @import "list/main";
