@@ -19,6 +19,7 @@ input, button, textarea, select {
 
 img {
   display: block;
+  width: 100%;
 }
 
 body {
@@ -46,6 +47,11 @@ main {
   background-position: center;
   background-size: 64px 10px;
   height: 24px;
+}
+
+.section-body {
+  width: 90%;
+  margin: auto;
 }
 
 .mt-title__banner {
@@ -1560,7 +1566,7 @@ html.mm-opening .menu-btn__link:after {
   display: flex;
   background-color: #fdb4b4;
   color: #fff;
-  width: 35px;
+  width: 42px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -1863,6 +1869,12 @@ html.mm-opening .menu-btn__link:after {
   color: #ff4d62;
   font-weight: 700;
   font-size: 18px;
+}
+
+.se-pageTemplate__subCaption {
+  color: #7f6136;
+  font-size: 14px;
+  text-align: left;
 }
 
 .se-pageTemplate h2 {
@@ -2440,6 +2452,11 @@ h6.edit-item {
   color: #a00606;
 }
 
+.ed-template__subCaption {
+  font-size: 14px;
+  color: #7f6136;
+}
+
 .ed-template__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2453,6 +2470,14 @@ h6.edit-item {
 }
 
 .ed-template__list a {
+  color: #7f6136;
+  margin: 0 auto;
+  text-decoration: underline;
+  height: 30px;
+  font-size: 14px;
+}
+
+.ed-template__list a.ed-template__listItem {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2471,6 +2496,7 @@ h6.edit-item {
   width: 80%;
   margin: 8px auto;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .su-messageArea {
