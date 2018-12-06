@@ -19,6 +19,7 @@ input, button, textarea, select {
 
 img {
   display: block;
+  width: 100%;
 }
 
 body {
@@ -46,6 +47,11 @@ main {
   background-position: center;
   background-size: 64px 10px;
   height: 24px;
+}
+
+.section-body {
+  width: 90%;
+  margin: auto;
 }
 
 .mt-title__banner {
@@ -482,7 +488,7 @@ li {
 .btn-base {
   text-align: center;
   width: 200px;
-  margin: 0 auto 10px;
+  margin: 16px auto 36px;
 }
 
 .btn-base a {
@@ -1405,6 +1411,7 @@ html.mm-opening .menu-btn__link:after {
   width: 100%;
   color: #ec6868;
   background-color: rgba(255, 255, 255, 0.4);
+  font-weight: 700;
 }
 
 .li-pageTemplate a::before, .li-pageTemplate a::after {
@@ -1500,6 +1507,8 @@ html.mm-opening .menu-btn__link:after {
   background-repeat: no-repeat;
   padding-left: 28px;
   position: absolute;
+  top: 12px;
+  left: 12px;
 }
 
 .type3 .li-pageTemplate a {
@@ -1508,7 +1517,7 @@ html.mm-opening .menu-btn__link:after {
 }
 
 .type3 .li-pageTemplate__tips {
-  left: 138px;
+  left: 128px;
 }
 
 .type3 .li-pageTemplate__tips li {
@@ -1552,7 +1561,7 @@ html.mm-opening .menu-btn__link:after {
   display: flex;
   background-color: #fdb4b4;
   color: #fff;
-  width: 35px;
+  width: 42px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -1831,7 +1840,7 @@ html.mm-opening .menu-btn__link:after {
 }
 
 .se-pageTemplate__mainImg {
-  width: 80%;
+  width: 200px;
   margin: auto;
 }
 
@@ -1841,6 +1850,26 @@ html.mm-opening .menu-btn__link:after {
 
 .se-pageTemplate__mainImg img {
   width: 100%;
+}
+
+.se-pageTemplate__title {
+  font-size: 14px;
+  text-align: center;
+  color: #7f6136;
+  font-weight: 100;
+  margin: 24px auto;
+}
+
+.se-pageTemplate__title span {
+  color: #ff4d62;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.se-pageTemplate__subCaption {
+  color: #7f6136;
+  font-size: 14px;
+  text-align: left;
 }
 
 .se-pageTemplate h2 {
@@ -1957,6 +1986,11 @@ h6.edit-item {
 .list-group.recomme label {
   width: 100%;
   display: block;
+}
+
+.list-group.recomme label span {
+  font-size: 14px;
+  padding-left: 12px;
 }
 
 .list-group.recomme + br {
@@ -2202,6 +2236,11 @@ p.re-result__text .year {
   color: #a00606;
 }
 
+.ed-template__subCaption {
+  font-size: 14px;
+  color: #7f6136;
+}
+
 .ed-template__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2215,6 +2254,14 @@ p.re-result__text .year {
 }
 
 .ed-template__list a {
+  color: #7f6136;
+  margin: 0 auto;
+  text-decoration: underline;
+  height: 30px;
+  font-size: 14px;
+}
+
+.ed-template__list a.ed-template__listItem {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2233,6 +2280,7 @@ p.re-result__text .year {
   width: 80%;
   margin: 8px auto;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .su-messageArea {
