@@ -4,7 +4,7 @@
     width: 100%;
     margin-top: 24px;
     img {width: 100%;}
-  }  
+  }
   &__menuTitle {
     color: #7f6136;
     text-align: center;
@@ -44,17 +44,17 @@
     font-weight: 700;
     &::before,
     &::after {
-        content: "";
-        display: block;
-        width: 6px;
-        height: 6px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        border-top: 1px solid;
-        border-right: 1px solid;
-        margin: auto;
-        transform: rotate(45deg);
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-top: 1px solid;
+      border-right: 1px solid;
+      margin: auto;
+      transform: rotate(45deg);
     }
     &::before{ right: 8px; }
     &::after{ right: 13px; }
@@ -139,7 +139,7 @@
       left: 128px;
       li {
         display: none;
-      
+
         &:first-child {
           display: flex;
           font-size: 12px;
@@ -301,6 +301,95 @@
 
   .li-pageTemplate__subTitle {
     left: 160px;
+  }
+}
+
+
+.type9 {
+
+  ul.li-pageTemplate{
+    margin-bottom: 0;
+  }
+
+  .li-pageTemplate li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    min-height: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #7F613B;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: normal;
+    margin: auto;
+    text-align: -webkit-center;
+    font-size: 14px;
+    line-height: 1.3em;
+    width: 80%;
+
+    &::after{
+      content: "";
+      border-bottom: 2px solid #eecd93;
+      display: block;
+      width: 90%;
+      bottom: 0;
+      left: 5%;
+      position: absolute;
+    }
+    &:last-child::after{
+      content: none;
+    }
+
+    .kobetsu_caption {
+      font-size: 12px;
+      color: #7f6136;
+      font-weight: normal;
+      display: block;
+    }
+  }
+}
+
+.type10 {
+
+  ul.li-pageTemplate{
+    margin-bottom: 0;
+  }
+  
+  .li-pageTemplate li {
+    a{
+      position: relative;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 0;
+      color: #ec6868;
+      background-color: rgba(255, 255, 255, 0.4);
+      font-weight: normal;
+      margin: auto;
+      text-align: -webkit-center;
+      font-size: 14px;
+      line-height: 1.3em;
+      width: 80%;
+    }
+
+    &::after{
+      content: "";
+      border-bottom: 2px solid #eecd93;
+      display: block;
+      width: 70%;
+      left: 15%;
+      position: absolute;
+    }
+    &:last-child::after{
+      content: none;
+    }
+
+    .kobetsu_caption {
+      font-size: 12px;
+      color: #7f6136;
+      font-weight: normal;
+    }
   }
 }
 

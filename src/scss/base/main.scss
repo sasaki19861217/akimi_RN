@@ -46,7 +46,7 @@ main{
 }
 
 .section-body {
-  width: 90%;
+  // width: 90%;
   margin: auto;
 }
 
@@ -114,6 +114,19 @@ main{
   }
 }
 
+.indention.appeal {
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  .big {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .middle {
+    font-size: 20px;
+  }
+}
+
 .notes {
   color: #7f6136;
   font-size: 13px;
@@ -126,7 +139,7 @@ hr {
 }
 
 .section-body {
-  width: 90%;
+  // width: 90%;
   margin: 4px auto 0;
 }
 

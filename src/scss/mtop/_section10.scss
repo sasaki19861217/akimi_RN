@@ -2,12 +2,14 @@
   margin-bottom: 48px;
 
   .appraisal_section {
-    background-image: url("/image/m_top/base.sp.480.png");
+    background-color: #FFFEF7;
+    background-image: url(/image/m_top/base_head.sp.480.png),url(/image/m_top/base_foot.sp.480.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: 0 8px,0 98%;
+    border-radius: 5px;
     padding-top: 7%;
     padding-bottom: 13%;
-    background-position: center;
 
     ul {
       text-align: center;
