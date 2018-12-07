@@ -5,6 +5,15 @@
   }
 }
 
+.re-result__body.type2{
+
+  .re-result__img{
+    img {
+      max-width: 200px;
+    }
+  }
+}
+
 .re-result__body.type3 {
 
   .indention.name {
@@ -59,7 +68,9 @@
 
 
 .re-result__body.type7 {
-
+  .re-result__img img{
+    width: 40px;
+  }
   .timing .re-result__text {
     display: block;
   }
@@ -253,6 +264,27 @@
     }
   }
 }
+
+.re-result__body.type14{
+
+  .re-result__img{
+    img {
+      max-width: 200px;
+    }
+  }
+}
+
+.re-result__body.type15{
+
+  .re-result__img{
+    img {
+      max-width: 110px;
+    }
+  }
+}
+
+
+
 
 // .re-result__titleSection :not(.aisho):not(br),
 // .re-result__afterSection :not(.aisho):not(br){

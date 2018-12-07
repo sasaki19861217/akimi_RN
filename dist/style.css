@@ -50,7 +50,6 @@ main {
 }
 
 .section-body {
-  width: 90%;
   margin: auto;
 }
 
@@ -117,6 +116,20 @@ main {
   margin-bottom: 10px;
 }
 
+.indention.appeal {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.indention.appeal .big {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.indention.appeal .middle {
+  font-size: 20px;
+}
+
 .notes {
   color: #7f6136;
   font-size: 13px;
@@ -130,7 +143,6 @@ hr {
 }
 
 .section-body {
-  width: 90%;
   margin: 4px auto 0;
 }
 
@@ -1166,12 +1178,14 @@ ul {
 }
 
 .mt-section__10 .appraisal_section {
-  background-image: url("/image/m_top/base.sp.480.png");
+  background-color: #FFFEF7;
+  background-image: url(/image/m_top/base_head.sp.480.png), url(/image/m_top/base_foot.sp.480.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: 0 8px,0 98%;
+  border-radius: 5px;
   padding-top: 7%;
   padding-bottom: 13%;
-  background-position: center;
 }
 
 .mt-section__10 .appraisal_section ul {
@@ -1721,6 +1735,101 @@ html.mm-opening .menu-btn__link:after {
   left: 160px;
 }
 
+.type9 ul.li-pageTemplate {
+  margin-bottom: 0;
+}
+
+.type9 .li-pageTemplate li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  min-height: 44px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #7F613B;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+  margin: auto;
+  text-align: -webkit-center;
+  font-size: 14px;
+  line-height: 1.3em;
+  width: 80%;
+}
+
+.type9 .li-pageTemplate li::after {
+  content: "";
+  border-bottom: 2px solid #eecd93;
+  display: block;
+  width: 90%;
+  bottom: 0;
+  left: 5%;
+  position: absolute;
+}
+
+.type9 .li-pageTemplate li:last-child::after {
+  content: none;
+}
+
+.type9 .li-pageTemplate li .kobetsu_caption {
+  font-size: 12px;
+  color: #7f6136;
+  font-weight: normal;
+  display: block;
+}
+
+.type10 ul.li-pageTemplate {
+  margin-bottom: 0;
+}
+
+.type10 .li-pageTemplate li a {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 0;
+  color: #ec6868;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-weight: normal;
+  margin: auto;
+  text-align: -webkit-center;
+  font-size: 14px;
+  line-height: 1.3em;
+  width: 80%;
+}
+
+.type10 .li-pageTemplate li::after {
+  content: "";
+  border-bottom: 2px solid #eecd93;
+  display: block;
+  width: 70%;
+  left: 15%;
+  position: absolute;
+}
+
+.type10 .li-pageTemplate li:last-child::after {
+  content: none;
+}
+
+.type10 .li-pageTemplate li .kobetsu_caption {
+  font-size: 12px;
+  color: #7f6136;
+  font-weight: normal;
+}
+
 .li-pageTemplate__subList a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1829,6 +1938,10 @@ html.mm-opening .menu-btn__link:after {
   background-color: #fabdbd;
   color: #fff;
   font-size: 12px;
+}
+
+.se-title__section {
+  margin: 8px 0;
 }
 
 .se-pageTemplate {
@@ -2079,9 +2192,19 @@ h6.edit-item {
   margin: 14px auto 24px;
 }
 
+.re-result__text img.re-stamp {
+  width: 30px;
+  margin-top: 6px;
+  margin-left: auto;
+}
+
 .re-result__body.type1 .re-result__menuName,
 .re-result__body.type2 .re-result__menuName {
   margin: 8px auto;
+}
+
+.re-result__body.type2 .re-result__img img {
+  max-width: 200px;
 }
 
 .re-result__body.type3 .indention.name span {
@@ -2119,6 +2242,10 @@ h6.edit-item {
 .re-result__body.type6 .re-result__img img {
   margin: auto;
   max-width: 160px;
+}
+
+.re-result__body.type7 .re-result__img img {
+  width: 40px;
 }
 
 .re-result__body.type7 .timing .re-result__text {
@@ -2298,6 +2425,14 @@ h6.edit-item {
 
 .re-result__body.type13 .luck ul li:first-child {
   border-top: 1px solid #ef6771;
+}
+
+.re-result__body.type14 .re-result__img img {
+  max-width: 200px;
+}
+
+.re-result__body.type15 .re-result__img img {
+  max-width: 110px;
 }
 
 .ko-listItem {
@@ -2526,7 +2661,9 @@ h6.edit-item {
           flex: 1;
   font-size: 14px;
   line-height: 1.3;
-  padding-left: 12px;
+  padding: 6px;
+  margin-left: 12px;
+  text-align: justify;
 }
 
 .su-messageArea__text span {
