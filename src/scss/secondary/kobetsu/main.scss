@@ -69,6 +69,19 @@
   }
 }
 
-.ko-line__img{
 
+.ko-title__img {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 36px;
+
+  &.result,
+  &.sel{
+    margin-bottom: 12px;
+  }
+
+  img {
+    max-width: 480px;
+    margin: auto;
+  }
 }
