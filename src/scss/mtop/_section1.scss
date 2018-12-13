@@ -34,21 +34,16 @@ ul.mt-gnav__list  {
     position: relative;
 
     &::after{
-      content:"|";
-      position:absolute;
-      color: #ef6771;
-      top: 25%;
-      @media screen and (max-width: 424px) and (min-width: 375px){
-        top: 13%;
-      }
-      @media screen and (max-width: 768px) and (min-width: 425px){
-        top: 16%;
-      }
-      right: -2px;
-      font-size: 14px;
-      @media screen and (max-width:374px){
-        font-size: 10px;
-      }
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      display: block;
+      width: 4px;
+      height: 14px;
+      border-right: 1px solid #ef6771;
     }
 
     &:last-child::after{

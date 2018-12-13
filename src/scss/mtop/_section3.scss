@@ -182,10 +182,13 @@
       padding: 10px 20px;
 
       &::after{
-        content:"";
+        content: "";
         position: absolute;
-        background-image: url("/image/m_top/next.sp.480.png");
-        top: 30%;
+        background-image: url(/image/m_top/next.sp.480.png);
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 14px;
         right: 12px;
         padding: 7px;
         background-repeat: no-repeat;
