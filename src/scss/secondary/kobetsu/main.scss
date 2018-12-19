@@ -60,12 +60,12 @@
     position: absolute;
     bottom: 4px;
     left: 8px;
-    background: #2B2F3A;
-    color: #fff;
+    color: #fdb4b4;
+    border: 1px solid #fdb4b4;
     font-size: 8px;
     line-height: 1;
     padding: 4px 8px;
-    border-radius: 2px;
+    border-radius: 3px;
   }
 }
 
@@ -83,5 +83,28 @@
   img {
     max-width: 480px;
     margin: auto;
+  }
+}
+
+.ko-listItem__status{
+  margin-top: 4px;
+  display: block;
+  font-size: 13px;
+}
+
+.kobetsu-top__result{
+  .re-result__menuName,
+  .re-result__main {
+    font-size: 13px;
+  }
+}
+
+.m-kobetsu-top{
+  .ko-title__img {
+    margin-bottom: 24px;
+  }
+
+  .indention.appeal{
+    margin-top: 12px;
   }
 }

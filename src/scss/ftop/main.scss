@@ -1,5 +1,5 @@
 .f-top body {
-  max-width: 100%;
+  max-width: 750px;
   margin: auto;
   background-image: url(/image/f_top/bg.480.jpg);
 }
@@ -39,4 +39,16 @@
     display: block;
     left: 10%;
   }
+}
+
+a.ft-link__admission{
+  bottom: 75px;
+}
+
+a.ft-link__login {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: underline;
+  bottom: 12px;
 }
