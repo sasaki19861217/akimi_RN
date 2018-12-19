@@ -109,7 +109,7 @@ main {
   color: #7f6136;
   text-align: center;
   margin: 0px auto 18px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .indention.title {
@@ -132,7 +132,7 @@ main {
 
 .notes {
   color: #7f6136;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 hr {
@@ -669,7 +669,7 @@ li {
 }
 
 .f-top body {
-  max-width: 100%;
+  max-width: 750px;
   margin: auto;
   background-image: url(/image/f_top/bg.480.jpg);
 }
@@ -706,6 +706,18 @@ li {
   width: 80%;
   display: block;
   left: 10%;
+}
+
+a.ft-link__admission {
+  bottom: 75px;
+}
+
+a.ft-link__login {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: underline;
+  bottom: 12px;
 }
 
 .m-top .mark_header_banner {
@@ -1771,6 +1783,7 @@ html.mm-opening .menu-btn__link:after {
   font-size: 14px;
   line-height: 1.3em;
   width: 85%;
+  font-size: 13px;
 }
 
 .type9 .li-pageTemplate li::after {
@@ -1787,8 +1800,12 @@ html.mm-opening .menu-btn__link:after {
   content: none;
 }
 
+.type9 .li-pageTemplate li .menu {
+  font-weight: bold;
+}
+
 .type9 .li-pageTemplate li .kobetsu_caption {
-  font-size: 12px;
+  font-size: 11px;
   color: #7f6136;
   font-weight: normal;
   display: block;
@@ -1820,8 +1837,12 @@ html.mm-opening .menu-btn__link:after {
   font-weight: normal;
   margin: auto;
   text-align: -webkit-center;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.3em;
+}
+
+.type10 .li-pageTemplate li a .menu-name {
+  font-weight: bold;
 }
 
 .type10 .li-pageTemplate li::after {
@@ -1839,7 +1860,7 @@ html.mm-opening .menu-btn__link:after {
 }
 
 .type10 .li-pageTemplate li .kobetsu_caption {
-  font-size: 12px;
+  font-size: 11px;
   color: #7f6136;
   font-weight: normal;
 }
@@ -2550,12 +2571,12 @@ h6.edit-item {
   position: absolute;
   bottom: 4px;
   left: 8px;
-  background: #2B2F3A;
-  color: #fff;
+  color: #fdb4b4;
+  border: 1px solid #fdb4b4;
   font-size: 8px;
   line-height: 1;
   padding: 4px 8px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .ko-title__img {
@@ -2571,6 +2592,25 @@ h6.edit-item {
 .ko-title__img img {
   max-width: 480px;
   margin: auto;
+}
+
+.ko-listItem__status {
+  margin-top: 4px;
+  display: block;
+  font-size: 13px;
+}
+
+.kobetsu-top__result .re-result__menuName,
+.kobetsu-top__result .re-result__main {
+  font-size: 13px;
+}
+
+.m-kobetsu-top .ko-title__img {
+  margin-bottom: 24px;
+}
+
+.m-kobetsu-top .indention.appeal {
+  margin-top: 12px;
 }
 
 .footer {
@@ -2707,7 +2747,7 @@ h6.edit-item {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.3;
   padding: 6px;
   margin-left: 12px;

@@ -333,6 +333,7 @@
     font-size: 14px;
     line-height: 1.3em;
     width: 85%;
+    font-size: 13px;
 
     &::after{
       content: "";
@@ -347,8 +348,12 @@
       content: none;
     }
 
+    .menu{
+      font-weight: bold;
+    }
+
     .kobetsu_caption {
-      font-size: 12px;
+      font-size: 11px;
       color: #7f6136;
       font-weight: normal;
       display: block;
@@ -382,8 +387,12 @@
       font-weight: normal;
       margin: auto;
       text-align: -webkit-center;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.3em;
+
+      .menu-name{
+        font-weight: bold;
+      }
     }
 
     &::after{
@@ -400,7 +409,7 @@
     }
 
     .kobetsu_caption {
-      font-size: 12px;
+      font-size: 11px;
       color: #7f6136;
       font-weight: normal;
     }
